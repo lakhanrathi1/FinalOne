@@ -40,17 +40,121 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="22dp"
+            android:contentDescription="@string/your_location"
             android:padding="10dp"
             app:srcCompat="@drawable/editlocationicon" />
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/mainLayout"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp">
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/containLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/electricianImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/electrician"
+                android:padding="15dp"
+                app:srcCompat="@drawable/editlocationicon" />
+
+            <TextView
+                android:id="@+id/electricianText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/electricianImage"
+                android:layout_alignStart="@+id/electricianImage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-5dp"
+                android:padding="5dp"
+                android:text="@string/electrician"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/painterImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/electricianImage"
+                android:contentDescription="@string/electrician"
+                android:padding="15dp"
+                app:srcCompat="@drawable/editlocationicon" />
+
+            <TextView
+                android:id="@+id/painterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/painterImage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="65dp"
+                android:layout_toEndOf="@+id/electricianText"
+                android:padding="5dp"
+                android:text="@string/painter"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/carpentarImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/painterImage"
+                android:contentDescription="@string/electrician"
+                android:padding="15dp"
+                app:srcCompat="@drawable/editlocationicon" />
+
+            <TextView
+                android:id="@+id/carpenterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carpentarImage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="65dp"
+                android:layout_toEndOf="@+id/painterText"
+                android:padding="5dp"
+                android:text="@string/carpenter"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="81dp"
+        android:padding="15dp"
+        android:text="@string/search_for"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
 
 </RelativeLayout>

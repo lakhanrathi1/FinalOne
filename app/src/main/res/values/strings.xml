@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">FinalOne</string>
     <string name="your_location">Your Location</string>
+    <string name="electrician">Electrician</string>
+    <string name="search_for">Search For...</string>
+    <string name="painter">Painter</string>
+    <string name="carpenter">Carpenter</string>
 </resources>
