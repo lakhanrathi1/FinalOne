@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.finalone.lakhan.finalone.location.GPS;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
     private GPS gps;
     private Location location;
-
+    FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference myref = firebaseDatabase.getReference("main");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
