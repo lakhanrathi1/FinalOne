@@ -67,12 +67,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
                 android:contentDescription="@string/electrician"
                 android:padding="15dp"
-                app:srcCompat="@drawable/editlocationicon" />
+                app:srcCompat="@drawable/electricianicon" />
 
             <TextView
                 android:id="@+id/electricianText"
@@ -92,15 +92,15 @@
                 android:id="@+id/painterImage"
                 android:layout_width="107dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="31dp"
                 android:layout_marginStart="34dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginEnd="31dp"
-                android:layout_marginBottom="15dp"
-                android:layout_toStartOf="@+id/carpentarImage"
                 android:layout_toEndOf="@+id/electricianImage"
+                android:layout_toStartOf="@+id/carpentarImage"
                 android:contentDescription="@string/electrician"
                 android:padding="15dp"
-                app:srcCompat="@drawable/editlocationicon" />
+                app:srcCompat="@drawable/paintericon" />
 
             <TextView
                 android:id="@+id/painterText"
@@ -122,12 +122,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
                 android:contentDescription="@string/electrician"
                 android:padding="15dp"
-                app:srcCompat="@drawable/editlocationicon" />
+                app:srcCompat="@drawable/carpentericon" />
 
             <TextView
                 android:id="@+id/carpenterText"
