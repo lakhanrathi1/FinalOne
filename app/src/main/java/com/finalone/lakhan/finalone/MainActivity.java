@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         gps = new GPS(MainActivity.this);
         location = gps.getLocation();
         //TODO: Add Firebase account
-        //TODO: Add icon
+        //TODO: Add icon https://demonuts.com/current-gps-location/
         //
     }
 }
