@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         gps = new GPS(MainActivity.this);
         location = gps.getLocation();
         //TODO: Add Firebase account
         //TODO: Add icon https://demonuts.com/current-gps-location/
         //
+
     }
 }

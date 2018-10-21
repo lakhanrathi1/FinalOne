@@ -20,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CardView.CardView" />
+        <activity android:name=".CardView.MainListView"></activity>
     </application>
 
 </manifest>
